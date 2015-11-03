@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  root 'static#home'
+  get 'home' => 'static#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

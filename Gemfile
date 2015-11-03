@@ -19,6 +19,12 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'simplecov'
+  gem 'minitest-reporters', '1.0.5'
+  gem 'mini_backtrace',     '0.1.3'
+end
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
