@@ -6,7 +6,8 @@
   @include background-image(url(../images/village-green.jpg));
   text-align: center;
   color: $main-color;
-  padding: 80px 60px;
+  padding-left:60px;
+  padding-right:60px;
   h1 {
     font-weight: 700;
     font-size: 42px;
@@ -21,4 +22,16 @@
 @media(min-width:768px) {
   .banner-small { display: none;}
   .banner { display: block;}
+}
+
+.picture {
+  height:600px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
+p {
+  font-size: 18px;
+  padding: 15px;
 }

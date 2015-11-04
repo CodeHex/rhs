@@ -19,8 +19,13 @@ body {
   flex-flow: column;
 }
 
-.main-header, .main-footer {
+.main-header {
   flex: 0 1 auto;
+}
+
+.main-footer {
+  flex: 0 1 auto;
+  border-top: 1px rgba( $border-color, .3) solid;
 }
 .main-content {
   flex: 1 1 auto;
@@ -32,6 +37,10 @@ hr {
     border-width: 3px;
     max-width: 50px;
     margin: 30px auto;
+}
+
+.after-menu {
+  padding-top: 80px;
 }
 
 .navbar-default {
