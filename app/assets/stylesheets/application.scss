@@ -65,7 +65,7 @@ hr {
     }
 }
 
-.banner {
+.banner, .banner-small {
   flex: 1 1 auto;
   @include background-image(url(../images/village-green.jpg));
   text-align: center;
@@ -79,4 +79,10 @@ hr {
     margin-bottom: 50px;
     font-size: 18px;
   }
+}
+
+.banner { display: none; }
+@media(min-width:768px) {
+  .banner-small { display: none;}
+  .banner { display: block;}
 }
