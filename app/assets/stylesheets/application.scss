@@ -1,25 +1,14 @@
+/*
+*= require_self
+*= require_tree
+*/
+
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-$main-color: #f05f40;
-$border-color: lighten(#000, 70%);
-$menu-backcolor: #fff;
-
-@mixin transition($seconds) {
-  -webkit-transition: all .35s;
-  -moz-transition: all .35s;
-  transition: all .35s;
-}
-
-@mixin background-image($url) {
-  background-image:$url;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
+@import "mixins";
+@import "variables";
 
 html, body {
   height:100%;
@@ -63,26 +52,4 @@ hr {
     .navbar-nav a {
       font-size: 13px;
     }
-}
-
-.banner, .banner-small {
-  flex: 1 1 auto;
-  @include background-image(url(../images/village-green.jpg));
-  text-align: center;
-  color: $main-color;
-  padding: 80px 60px;
-  h1 {
-    font-weight: 700;
-    font-size: 50px;
-  }
-  p {
-    margin-bottom: 50px;
-    font-size: 18px;
-  }
-}
-
-.banner { display: none; }
-@media(min-width:768px) {
-  .banner-small { display: none;}
-  .banner { display: block;}
 }

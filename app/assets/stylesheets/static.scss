@@ -1,3 +1,24 @@
-// Place all the styles related to the static controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "mixins";
+@import "variables";
+
+.banner, .banner-small {
+  flex: 1 1 auto;
+  @include background-image(url(../images/village-green.jpg));
+  text-align: center;
+  color: $main-color;
+  padding: 80px 60px;
+  h1 {
+    font-weight: 700;
+    font-size: 42px;
+  }
+  p {
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+}
+
+.banner { display: none; }
+@media(min-width:768px) {
+  .banner-small { display: none;}
+  .banner { display: block;}
+}
